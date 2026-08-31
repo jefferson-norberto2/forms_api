@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message User {
+    required string name = 1;
+    required string email = 2;
+    required string address = 3;
+}
