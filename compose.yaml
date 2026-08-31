@@ -1,0 +1,10 @@
+services:
+  forms_api:
+    build:
+      context: . # Define a raiz do projeto como área de trabalho do Docker
+      dockerfile: .docker/Dockerfile # Aponta onde está o arquivo Dockerfile
+    container_name: forms_api
+    ports:
+      - "9300:9300"
+    volumes:
+      - .:/app # Mapeia a raiz do seu projeto para a pasta /app do container
